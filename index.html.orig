@@ -32,7 +32,7 @@ vim-custom for windows安装方法：解压vim目录放置到C:\Program Files\vim
 
 官方互动QQ群：VIM中国 群号： <a target="_blank" href="http://wp.qq.com/wpa/qunwpa?idkey=13e6d707407f0fb6dcf5ce1098b0064580ec1287e6293bbc622424c03b7d1e73">63490795</a>
 
-VIM官网:<a href="//www.vim.org">http://www.vim.org</a>
+VIM官网:<a href="http://www.vim.org">http://www.vim.org</a>
 
 本项目目前已实现自动构建.
 </pre>
@@ -40,21 +40,21 @@ VIM官网:<a href="//www.vim.org">http://www.vim.org</a>
         <blockquote>wget <a href="vim.tgz?{VER_NUM}">https://s.netroby.com/vimcustom/vim.tgz?{VER_NUM}</a></blockquote>
 
         <h3>下载Windows版 ({VER})</h3>
-        <blockquote>wget <a href="vim.zip?{VER_NUM}">http://s.netroby.com/vimcustom/vim.zip?{VER_NUM}</a></blockquote>
+        <blockquote>wget <a href="vim.zip?{VER_NUM}">https://s.netroby.com/vimcustom/vim.zip?{VER_NUM}</a></blockquote>
         <h3>赞助</h3>
         <p>我们需要您的支持，以支付自动构建服务器的租赁费用。</p>
         <h4>支付宝收款账户</h4>
-        <p><a href="//me.alipay.com/netroby">http://me.alipay.com/netroby</a></p>
+        <p><a href="//me.alipay.com/netroby">https://me.alipay.com/netroby</a></p>
         <h4>比特币收款账户</h4>
         <p><blockquote>136MYemy5QmmBPLBLr1GHZfkES7CsoG4Qh</blockquote></p>
-        <div>Hosting by: <a href="//www.quickweb.co.nz">QuickWeb</a>, Powered by <a href="//www.netroby.com">netroby</a>, Follow us: <a href="//twitter.com/netroby">@netroby</a> </div>
+        <div>Hosting by: <a href="http://www.quickweb.co.nz">QuickWeb</a>, Powered by <a href="http://www.netroby.com">netroby</a>, Follow us: <a href="//twitter.com/netroby">@netroby</a> </div>
         <script>
             (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
                     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
                 m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
             })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-            ga('create', 'UA-4450773-36', 'duapp.com');
+            ga('create', 'UA-4450773-36', 'netroby.com');
             ga('send', 'pageview');
 
         </script>
