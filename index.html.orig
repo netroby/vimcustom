@@ -3,6 +3,14 @@
     <head>
         <meta charset="GBK">
         <title>vim custom building</title>
+        <style>
+            body {font-size:12px;}
+            blockquote {
+                background: #FEFEFE;
+                padding: 4px 6px;
+                border: #DDD 2px inset;
+            }
+        </style>
     </head>
     <body>
         <h1>Vim-Custom</h1>
