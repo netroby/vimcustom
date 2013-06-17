@@ -1,6 +1,6 @@
 #!/bin/sh
 cd /usr/local/src/vim
-hg pull -f
+/usr/local/bin/proxychains4 hg pull -f
 sed -i 's/CROSS=no/CROSS=yes/g' src/Make_ming.mak
 sed -i 's/i586-pc-mingw32msvc-/i686-pc-mingw32-/g' src/Make_ming.mak 
 cd src 
