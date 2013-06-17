@@ -1,7 +1,9 @@
 #!/bin/sh
+export BASEDIR=$(pwd)
 cd /root/.vim/bundle
 ./update.sh
 cd /root/
 tar zcvf vim.tgz .vim*
-unlink /var/www/vimcustom/vim.tgz
-mv vim.tgz /var/www/vimcustom
+cd ${BASEDIR}
+unlink output/vim.tgz
+mv vim.tgz output/
