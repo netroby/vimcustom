@@ -1,10 +1,11 @@
 #!/bin/sh
-if [ -f output/index.html ]
+export BASEDIR=$(pwd)
+if [ -f ${BASEDIR}/output/index.html ]
 then
-    unlink output/index.html
+    unlink ${BASEDIR}/output/index.html
 fi
-cp index.html.orig output/index.html
+cp ${BASEDIR}/index.html.orig ${BASEDIR}/output/index.html
 export VER=$(date +"%Y-%m-%d %H:%I:%S")
 export VER_NUM=$(date +"%Y%m%d%H%I%S")
-sed -i "s/{VER}/${VER}/g" output/index.html
-sed -i "s/{VER_NUM}/${VER_NUM}/g" output/index.html
+sed -i "s/{VER}/${VER}/g" ${BASEDIR}/output/index.html
+sed -i "s/{VER_NUM}/${VER_NUM}/g" ${BASEDIR}/output/index.html

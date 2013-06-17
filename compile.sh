@@ -11,10 +11,10 @@ make distclean
 mingw32-make -f Make_ming.mak
 \cp -rf *.exe /usr/local/src/vim-zip/vim/vim73/ 
 cd /usr/local/src/vim-zip
-zip -r vim.zip vim
+zip -r ${BASEDIR}/vim.zip vim
 cd ${BASEDIR}
 if [ -f output/vim.zip ]
 then
-    unlink output/vim.zip
+    unlink ${BASEDIR}/output/vim.zip
 fi
-mv vim.zip output/
+mv ${BASEDIR}/vim.zip ${BASEDIR}/output/

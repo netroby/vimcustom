@@ -1,3 +1,4 @@
 #!/bin/sh
-mkdir output
-chmod 777 output
+export BASEDIR=$(pwd)
+mkdir ${BASEDIR}/output
+chmod 777 ${BASEDIR}/output
