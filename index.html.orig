@@ -43,10 +43,11 @@ VIM官网:<a href="//www.vim.org">http://www.vim.org</a>
         <blockquote>wget <a href="vim.zip?{VER_NUM}">http://s.netroby.com/vimcustom/vim.zip?{VER_NUM}</a></blockquote>
         <h3>赞助</h3>
         <p>我们需要您的支持，以支付自动构建服务器的租赁费用。</p>
-        <p>支付宝收款账户<p>
+        <h4>支付宝收款账户</h4>
         <p><a href="//me.alipay.com/netroby">http://me.alipay.com/netroby</a></p>
-        <p>比特币收款账户</p>
+        <h4>比特币收款账户</h4>
         <p><blockquote>136MYemy5QmmBPLBLr1GHZfkES7CsoG4Qh</blockquote></p>
+        <div>Hosting by: <a href="//www.quickweb.co.nz">QuickWeb</a>, Powered by <a href="//www.netroby.com">netroby</a>, Follow us: <a href="//twitter.com/netroby">@netroby</a> </div>
         <script>
             (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
                     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
