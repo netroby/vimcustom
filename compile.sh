@@ -14,7 +14,7 @@ zip -r ${WORKSPACE}/vim.zip vim
 cd ${WORKSPACE}
 if [ -f ${WORKSPACE}/output/vim.zip ]
 then
-    unlink ${WORKSPACE}/output/vim.zip
+    /bin/unlink ${WORKSPACE}/output/vim.zip
 fi
 mv ${WORKSPACE}/vim.zip ${WORKSPACE}/output/
 cd ${WORKSPACE}
