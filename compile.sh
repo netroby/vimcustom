@@ -13,7 +13,7 @@ mingw32-make -f Make_ming.mak
 cd /usr/local/src/vim-zip
 zip -r ${BASEDIR}/vim.zip vim
 cd ${BASEDIR}
-if [ -f output/vim.zip ]
+if [ -f ${BASEDIR}/output/vim.zip ]
 then
     unlink ${BASEDIR}/output/vim.zip
 fi
