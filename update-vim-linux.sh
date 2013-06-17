@@ -1,12 +1,12 @@
 #!/bin/sh
-export BASEDIR=$(pwd)
 cd /root/.vim/bundle
 ./update.sh
 cd /root/
-tar zcvf ${BASEDIR}/vim.tgz .vim*
-cd ${BASEDIR}
-if [  -f ${BASEDIR}/output/vim.tgz ]
+tar zcvf ${WORKSPACE}/vim.tgz .vim*
+cd ${WORKSPACE}
+if [  -f ${WORKSPACE}/output/vim.tgz ]
 then
-    unlink ${BASEDIR}/output/vim.tgz
+    unlink ${WORKSPACE}/output/vim.tgz
 fi
-mv ${BASEDIR}/vim.tgz ${BASEDIR}/output/
+mv ${WORKSPACE}/vim.tgz ${WORKSPACE}/output/
+cd ${WORKSPACE}

@@ -1,5 +1,4 @@
 #!/bin/sh
-export BASEDIR=$(pwd)
 cd /usr/local/src/vim
 /usr/local/bin/proxychains4 hg pull -f
 sed -i 's/CROSS=no/CROSS=yes/g' src/Make_ming.mak
@@ -11,10 +10,11 @@ make distclean
 mingw32-make -f Make_ming.mak
 \cp -rf *.exe /usr/local/src/vim-zip/vim/vim73/ 
 cd /usr/local/src/vim-zip
-zip -r ${BASEDIR}/vim.zip vim
-cd ${BASEDIR}
-if [ -f ${BASEDIR}/output/vim.zip ]
+zip -r ${WORKSPACE}/vim.zip vim
+cd ${WORKSPACE}
+if [ -f ${WORKSPACE}/output/vim.zip ]
 then
-    unlink ${BASEDIR}/output/vim.zip
+    unlink ${WORKSPACE}/output/vim.zip
 fi
-mv ${BASEDIR}/vim.zip ${BASEDIR}/output/
+mv ${WORKSPACE}/vim.zip ${WORKSPACE}/output/
+cd ${WORKSPACE}
