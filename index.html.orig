@@ -17,7 +17,10 @@ ubuntu下面安装 gvim的命令是 sudo apt-get update && sudo apt-get install vim-gnom
 
 vim-custom for linux安装方法很简便，只需要下载并解压到用户根目录(/home/username)下面即可。
 
-版本命名规则为 单数 1，3，5，7，9 为Windows版 。2，4，6，8，0 为Linux版。
+vim-custom for windows安装方法：解压vim目录放置到C:\Program Files\vim
+
+用管理员身份运行：install.bat完成安装过程
+
 
 官方互动QQ群：VIM中国 群号： <a target="_blank" href="http://wp.qq.com/wpa/qunwpa?idkey=13e6d707407f0fb6dcf5ce1098b0064580ec1287e6293bbc622424c03b7d1e73">63490795</a>
 
