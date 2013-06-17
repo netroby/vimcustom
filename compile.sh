@@ -13,5 +13,8 @@ mingw32-make -f Make_ming.mak
 cd /usr/local/src/vim-zip
 zip -r vim.zip vim
 cd ${BASEDIR}
-unlink output/vim.zip
+if [ -f output/vim.zip ]
+then
+    unlink output/vim.zip
+fi
 mv vim.zip output/

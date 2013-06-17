@@ -1,5 +1,8 @@
 #!/bin/sh
-unlink output/index.html
+if [ -f output/index.html ]
+then
+    unlink output/index.html
+fi
 cp index.html.orig output/index.html
 export VER=$(date +"%Y-%m-%d %H:%I:%S")
 export VER_NUM=$(date +"%Y%m%d%H%I%S")
