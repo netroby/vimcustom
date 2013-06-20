@@ -2,7 +2,7 @@
 cd /root/.vim
 ./update.sh
 cd /root/
-tar zcvf ${WORKSPACE}/vim.tgz .vim*
+tar zcf ${WORKSPACE}/vim.tgz .vim*
 cd ${WORKSPACE}
 if [  -f ${WORKSPACE}/output/vim.tgz ]
 then

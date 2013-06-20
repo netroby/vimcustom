@@ -10,10 +10,11 @@ cd src
 rm -rf *.exe
 make clean
 make distclean
+rm -rf gobji386
 mingw32-make -f Make_ming.mak
 \cp -rf *.exe /usr/local/src/vim-zip/vim/vim73/ 
 cd /usr/local/src/vim-zip
-zip -r ${WORKSPACE}/vim.zip vim
+zip -qr ${WORKSPACE}/vim.zip vim
 cd ${WORKSPACE}
 if [ -f ${WORKSPACE}/output/vim.zip ]
 then
