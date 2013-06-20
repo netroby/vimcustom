@@ -1,5 +1,5 @@
 #!/bin/sh
-cd /root/.vim/bundle
+cd /root/.vim
 ./update.sh
 cd /root/
 tar zcvf ${WORKSPACE}/vim.tgz .vim*
