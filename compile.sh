@@ -5,7 +5,7 @@ hg checkout -C
 sed -i 's/CROSS=no/CROSS=yes/g' src/Make_ming.mak
 sed -i 's/i586-pc-mingw32msvc-/i686-pc-mingw32-/g' src/Make_ming.mak 
 sed -i 's/CROSS),no)/CROSS),yes)/g' src/Make_ming.mak 
-sed -i 's/#PYTHON=c:\/python20/PYTHON=\/usr\/local\/src\/python27\/g' src/Make_ming.mak 
+sed -i 's/#PYTHON=c:\/python20/PYTHON=\/usr\/local\/src\/python27/g' src/Make_ming.mak 
 cd src 
 rm -rf *.exe
 make clean
