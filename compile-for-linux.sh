@@ -14,6 +14,7 @@ make distclean
 export CFLAGS="-O3 -msse -msse2 -mmmx -funroll-loops -mfpmath=sse"
 make && make install
 cd /root
+rm -rf vim.tgz
 wget https://s.netroby.com/vimcustom/vim.tgz
 tar zxf vim.tgz
 
