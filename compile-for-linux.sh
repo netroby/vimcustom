@@ -8,11 +8,15 @@ hg checkout -C
 hg pull -uf
 sed -i 's/#CONF_OPT_GUI = --disable-gui/CONF_OPT_GUI = --disable-gui/g' src/Makefile
 sed -i 's/#CONF_OPT_X = --without-x/CONF_OPT_X = --without-x/g' src/Makefile
-sed -i 's/#CONF_OPT_PYTHON = --enable-pythoninterp=dynamic/CONF_OPT_PYTHON = --enable-pythoninterp=dynamic/g' src/Makefile
-make clean
-make distclean
+sed -i 's/#CONF_OPT_PYTHON = --enable-pythoninterp=dynamic/CONF_OPT_PYTHON = --enable-pythoninterp=dynamic/g' src/Makefile 
 export CFLAGS="-O3 -msse -msse2 -mmmx -funroll-loops -mfpmath=sse"
 make && make install
+hg checkout -C
+make clean && make distclean 
+if [ -d "src/gobji386" ];
+then
+    rm -rf src/gobji386
+fi
 cd /root
 rm -rf vim.tgz
 wget https://s.netroby.com/vimcustom/vim.tgz
