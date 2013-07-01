@@ -7,7 +7,7 @@ sed -i 's/i586-pc-mingw32msvc-/i686-pc-mingw32-/g' src/Make_ming.mak
 sed -i 's/CROSS),no)/CROSS),yes)/g' src/Make_ming.mak 
 sed -i 's/#PYTHON=c:\/python20/PYTHON=\/usr\/local\/src\/python27/g' src/Make_ming.mak 
 sed -i 's/#LUA=\/usr\/local/LUA=\/usr\/local\/src\/lua\/5.1/g' src/Make_ming.mak
-
+sed -i 's/PYTHON_VER=22/PYTHON_VER=27/g' src/Make_ming.mak
 cd src 
 rm -rf *.exe 
 mingw32-make -f Make_ming.mak
