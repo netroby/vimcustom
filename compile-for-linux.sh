@@ -18,9 +18,5 @@ if [ -d "src/gobji386" ];
 then
     rm -rf src/gobji386
 fi
-cd /root
-rm -rf vim.tgz
-wget https://s.netroby.com/vimcustom/vim.tgz
-tar zxf vim.tgz
 
 
